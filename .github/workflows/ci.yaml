@@ -6,7 +6,7 @@ jobs:
   build:
     strategy:
       matrix:
-        label: [actuated, actuated-aarch64]
+        label: [actuated, actuated-aarch64, ubuntu-latest]
     runs-on: ${{ matrix.label }}
     steps:
       - uses: actions/checkout@v3
